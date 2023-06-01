@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import './index.scss'
 
 const Contact = () => {
@@ -95,6 +96,28 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className="info-map">
+                    Michael Kawata
+                    <br />
+                    United States
+                    <br />
+                    West Los Angeles
+                    <br />
+                    <span>mikeykawata@gmail.com</span>
+                </div>
+                <div className='map-wrap'>
+                    <MapContainer center={[34.036023, -118.412415]} zoom={12} scrollWheelZoom={false}>
+                        <TileLayer
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={[34.036023, -118.412415]}>
+                            <Popup>
+                                Michael lives here.
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
             <Loader type="line-scale" />
