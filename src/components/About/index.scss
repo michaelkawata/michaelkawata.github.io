@@ -90,3 +90,12 @@
         transform: rotateX(90deg);
     }
 }
+
+@media screen and (max-width: 1050px) {
+    .stage-cube-cont {
+        position: initial;
+        width: 100%;
+        height: 0%;
+        overflow: visible;
+    }
+}
