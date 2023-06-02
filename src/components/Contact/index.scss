@@ -115,8 +115,9 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1050px) {
   .map-wrap {
+    display: hidden;
     float: none;
     margin: 0;
     width: 100%;

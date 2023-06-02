@@ -39,7 +39,8 @@
 }
 
 .about-page,
-.contact-page {
+.contact-page,
+.projects-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -113,6 +114,18 @@
     &:nth-of-type(3) {
       animation-delay: 1.3s;
     }
+  }
+}
 
+@media screen and (max-width: 1050px) {
+
+  .page {
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
   }
 }

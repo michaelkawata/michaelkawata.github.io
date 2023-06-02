@@ -5,6 +5,7 @@ import LogoTitle from '../../assets/images/logo-m1.png'
 import './index.scss'
 import Logo from './Logo';
 import Loader from 'react-loaders';
+import Lottie from './Lottie';
 
 const Home = () => {
 	const [letterClass, setLetterClass] = useState('text-animate')
@@ -20,6 +21,9 @@ const Home = () => {
 
 	return (
 		<>
+			<div>
+				<Lottie />
+			</div>
 			<div className="container home-page">
 				<div className="text-zone">
 					<h1>
