@@ -38,25 +38,9 @@
   animation-delay: 1s;
 }
 
-.about-page,
-.contact-page,
-.projects-page {
-  .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
-  }
-
-  .text-animate-hover {
-    &:hover {
-      color: #ffd700;
-    }
-  }
+.container.about-page,
+.container.contact-page,
+.container.projects-page {
 
 
   h1 {
@@ -115,6 +99,23 @@
       animation-delay: 1.3s;
     }
   }
+
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #ffd700;
+    }
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -139,6 +140,22 @@
         display: block;
         padding: 20px;
         box-sizing: border-box;
+      }
+    }
+
+    &.projects-page {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+
+      h1.page-title {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .image-box {
+        height: 200px;
+        max-width: calc(50% - 10px);
       }
     }
   }

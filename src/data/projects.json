@@ -1,0 +1,22 @@
+{
+    "project": [
+        {
+            "cover": "/projects/images/three.png",
+            "title": "Dumbo Game",
+            "description": "Javascript Game",
+            "url": "https://michaelkawata.github.io/When-I-See-An-Elephant-Fly-Game/"
+        },
+        {
+            "cover": "/projects/images/CarBlog.png",
+            "title": "Shift Into Gear Car Blog",
+            "description": "MERN stack Blog",
+            "url": "https://car-blog.onrender.com"
+        },
+        {
+            "cover": "/projects/images/eCommerce.png",
+            "title": "COMING SOON...",
+            "description": "MERN stack eCommerce App",
+            "url": ""
+        }
+    ]
+}
