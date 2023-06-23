@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoM from '../../assets/images/logo-m1.png'
 import LogoName from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faClose, faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClose, faEnvelope, faHome, faNewspaper, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 
@@ -55,6 +55,11 @@ const Sidebar = () => {
         <li>
           <a target="_blank" rel='noreferrer' href='https://github.com/michaelkawata'>
             <FontAwesomeIcon icon={faGithub} color="#ffffff" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel='noreferrer' href='https://michaelkawataresume.tiiny.site/'>
+            <FontAwesomeIcon icon={faNewspaper} color="#ffffff" />
           </a>
         </li>
       </ul>
