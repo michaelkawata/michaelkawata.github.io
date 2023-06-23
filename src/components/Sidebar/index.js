@@ -37,6 +37,11 @@ const Sidebar = () => {
           activateclassname="active" className="contact-link" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#ffffff" />
         </NavLink>
+        <NavLink
+          onClick={() => setShowNav(false)}
+          target="_blank" activateclassname="active" className="resume-link" to="https://michaelkawataresume.tiiny.site/">
+          <FontAwesomeIcon icon={faNewspaper} color="#ffffff" />
+        </NavLink>
         <FontAwesomeIcon
           icon={faClose}
           className="close-icon"
@@ -55,11 +60,6 @@ const Sidebar = () => {
         <li>
           <a target="_blank" rel='noreferrer' href='https://github.com/michaelkawata'>
             <FontAwesomeIcon icon={faGithub} color="#ffffff" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel='noreferrer' href='https://michaelkawataresume.tiiny.site/'>
-            <FontAwesomeIcon icon={faNewspaper} color="#ffffff" />
           </a>
         </li>
       </ul>
