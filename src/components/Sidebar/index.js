@@ -48,7 +48,6 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}
           color="#ffffff"
           size="3x"
-
         />
       </nav>
       <ul>
